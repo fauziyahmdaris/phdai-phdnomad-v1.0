@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="700" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box{fill:#ffffff;stroke:#1f2937;stroke-width:2;rx:10;ry:10}
+    .title{font: 700 16px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial}
+    .text{font: 400 14px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial}
+    .muted{fill:#4b5563}
+    .arrow{stroke:#1f2937;stroke-width:2;marker-end:url(#arrow)}
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937" />
+    </marker>
+  </defs>
+
+  <!-- Identification -->
+  <rect class="box" x="50" y="40" width="360" height="90" />
+  <text class="title" x="70" y="70">Identification</text>
+  <text class="text muted" x="70" y="95">Records identified from databases (n = __)</text>
+  <text class="text muted" x="70" y="118">Additional records from other sources (n = __)</text>
+
+  <!-- Screening -->
+  <rect class="box" x="50" y="200" width="360" height="90" />
+  <text class="title" x="70" y="230">Screening</text>
+  <text class="text muted" x="70" y="255">Records after duplicates removed (n = __)</text>
+
+  <!-- Eligibility -->
+  <rect class="box" x="50" y="360" width="360" height="110" />
+  <text class="title" x="70" y="390">Eligibility</text>
+  <text class="text muted" x="70" y="415">Full-text articles assessed for eligibility (n = __)</text>
+  <text class="text muted" x="70" y="438">Full-text articles excluded, with reasons (n = __)</text>
+
+  <!-- Included -->
+  <rect class="box" x="50" y="540" width="360" height="90" />
+  <text class="title" x="70" y="570">Included</text>
+  <text class="text muted" x="70" y="595">Studies included in final synthesis (n = __)</text>
+
+  <!-- Arrows -->
+  <line class="arrow" x1="230" y1="130" x2="230" y2="200"/>
+  <line class="arrow" x1="230" y1="290" x2="230" y2="360"/>
+  <line class="arrow" x1="230" y1="470" x2="230" y2="540"/>
+
+  <!-- Legend -->
+  <text class="text" x="450" y="60">PRISMA-style Flow (MVP)</text>
+  <text class="text muted" x="450" y="85">Replace "__" with counts, or export and annotate.</text>
+  <text class="text muted" x="450" y="110">File: prisma-flow.svg</text>
+</svg>

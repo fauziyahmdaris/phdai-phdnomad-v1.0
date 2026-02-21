@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 3c3.866 0 7 2.91 7 6.5V17a4 4 0 01-4 4h-6a4 4 0 01-4-4V9.5C5 5.91 8.134 3 12 3z" fill="url(#g)" opacity="0.15"/>
+  <path d="M12 4.5c3.314 0 6 2.41 6 5.4V17a3 3 0 01-3 3H9a3 3 0 01-3-3V9.9c0-2.99 2.686-5.4 6-5.4z" stroke="#7c3aed" stroke-width="1.2" fill="none"/>
+  <circle cx="8.75" cy="10.5" r="2.25" fill="#fff" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="15.25" cy="10.5" r="2.25" fill="#fff" stroke="#0ea5e9" stroke-width="1"/>
+  <circle cx="8.75" cy="10.5" r="0.9" fill="#0f172a"/>
+  <circle cx="15.25" cy="10.5" r="0.9" fill="#0f172a"/>
+  <path d="M12 12.8c1.3 0 2.3.6 2.3.6-.6 1.2-1.7 2-2.3 2s-1.7-.8-2.3-2c0 0 1-.6 2.3-.6z" fill="#f59e0b"/>
+  <path d="M7.2 7.5l2 1.2M16.8 7.5l-2 1.2" stroke="#7c3aed" stroke-width="1" stroke-linecap="round"/>
+</svg>

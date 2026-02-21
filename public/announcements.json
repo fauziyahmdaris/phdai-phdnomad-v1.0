@@ -1,0 +1,35 @@
+[
+  {
+    "title": "UiTM IPSis – Online Registration for Postgraduate Programmes",
+    "university": "Universiti Teknologi MARA (UiTM) – Institute of Postgraduate Studies (IPSis)",
+    "country": "Malaysia",
+    "type": "Admissions",
+    "date": "2025-01-01",
+    "deadline": null,
+    "summary": "Online registration portal for UiTM postgraduate programmes (Masters and PhD).",
+    "link": "https://ipsis.uitm.edu.my/index.php/programme/online-registration",
+    "tags": ["PhD", "Masters", "Admissions"]
+  },
+  {
+    "title": "UM Asia-Europe Institute – PhD Programme (Flyer 2025)",
+    "university": "University of Malaya – Asia-Europe Institute (AEI)",
+    "country": "Malaysia",
+    "type": "Programme",
+    "date": "2025-01-01",
+    "deadline": null,
+    "summary": "PhD programme information and specialisations offered by AEI, University of Malaya (PDF flyer).",
+    "link": "https://aei.um.edu.my/docs/2025/PHDFlyer2025.pdf",
+    "tags": ["PhD", "Programme", "Brochure"]
+  },
+  {
+    "title": "Geomatika University – Programme Information",
+    "university": "Geomatika University",
+    "country": "Malaysia",
+    "type": "Programme",
+    "date": "2025-01-01",
+    "deadline": null,
+    "summary": "General information page for programmes at Geomatika University (check site for latest updates).",
+    "link": "https://www.geomatika.edu.my/",
+    "tags": ["Programme", "Info"]
+  }
+]

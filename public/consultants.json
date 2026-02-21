@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Prof. Dr. Norlia Ahmad",
+    "title": "Professor",
+    "institution": "Kwansei Gakuin University",
+    "country": "Japan",
+    "areas": ["Higher Education", "Research Supervision"],
+    "website": "http://researchers.kwansei.ac.jp/view?l=en&u=45749",
+    "email": ""
+  },
+  {
+    "name": "Fauziyah Md Aris (Qash Aris)",
+    "title": "Graduate Technologist (MBOT) and Educational Development Leader, Gulf Higher Education Network (GULF HE)",
+    "institution": "GIG AIOU | Global International Technology Sdn. Bhd.",
+    "country": "Malaysia",
+    "areas": ["EdTech", "AI in Education", "AI Agent in Education"],
+    "website": "https://www.qasharis.my",
+    "email": "qasharis@gmail.com"
+  }
+]

@@ -1,0 +1,59 @@
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node
+node_modules/
+.npm
+.nvm
+.pnp
+.pnp.js
+coverage
+
+# Environment Variables (DO NOT COMMIT!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+dist
+dist-ssr
+*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temp
+*~
+.Trash/
+.zsh_history
+.bash_history
+.viminfo
+.lesshst
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+drphdai-mvp-backup.zip
+pnpm-lock.yaml

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    // ... your existing options (like "target", "module", etc.)
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+    // ... other options
+  },
+  // ... other top-level keys like "include", "exclude", etc.
+}
