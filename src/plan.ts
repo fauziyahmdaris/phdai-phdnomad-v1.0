@@ -8,6 +8,29 @@ export interface PlanInfo {
 
 const KEY = 'drphdai_plan';
 
+function readEnvKeys(): string[] {
+  try {
+    const env = (import.meta as any).env || {};
+
+    const rawList = typeof env.VITE_LICENSE_KEYS === 'string' ? env.VITE_LICENSE_KEYS : '';
+    const owner = typeof env.VITE_OWNER_LICENSE_KEY === 'string' ? env.VITE_OWNER_LICENSE_KEY : '';
+    const supervisor = typeof env.VITE_SUPERVISOR_LICENSE_KEY === 'string' ? env.VITE_SUPERVISOR_LICENSE_KEY : '';
+
+    const combined = [rawList, owner, supervisor]
+      .filter(Boolean)
+      .join(',');
+
+    if (!combined) return [];
+
+    return combined
+      .split(/[\s,;]+/g)
+      .map((s) => s.trim().toUpperCase())
+      .filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
 // Add your valid license keys here - UPDATE THIS ARRAY WHEN YOU GET NEW CUSTOMERS
 const VALID_LICENSE_KEYS = [
   "DRPHD-AI9X-7B2C-8D3E", // Example key - replace with real ones
@@ -23,6 +46,9 @@ const VALID_LICENSE_KEYS = [
   "DRPHD10-1125-qnp0-RTYU"
   // Add more keys here as customers purchase
 ];
+
+const ENV_LICENSE_KEYS = readEnvKeys();
+const ALL_VALID_LICENSE_KEYS = Array.from(new Set([...VALID_LICENSE_KEYS, ...ENV_LICENSE_KEYS]));
 
 export function getPlan(): PlanInfo {
   try {
@@ -44,7 +70,7 @@ export function setPlan(plan: PlanType, expiresAt?: number) {
 export function activateWithLicenseKey(licenseKey: string): boolean {
   const normalizedKey = licenseKey.toUpperCase().trim();
   
-  if (VALID_LICENSE_KEYS.includes(normalizedKey)) {
+  if (ALL_VALID_LICENSE_KEYS.includes(normalizedKey)) {
     const info: PlanInfo = { 
       plan: 'mvp', 
       expiresAt: undefined, // No expiration = lifetime
